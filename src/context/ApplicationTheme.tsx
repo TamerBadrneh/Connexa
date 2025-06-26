@@ -41,53 +41,51 @@ const ApplicationTheme = createTheme({
     },
 
     typography: {
-        fontFamily: "IBM Plex Sans Arabic, sans-serif",
+        fontFamily: "Inter, sans-serif",
 
         htmlFontSize: 16,
+
+        allVariants: {
+            textTransform: "none"
+        },
 
         h1: {
             fontSize: "2rem",
             fontWeight: 700,
             lineHeight: 1.6,
-            textAlign: "right",
         },
+
 
         h2: {
             fontSize: "1.75rem",
             fontWeight: 700,
             lineHeight: 1.6,
-            textAlign: "right",
         },
 
         h3: {
             fontSize: "1.5rem",
             fontWeight: 700,
             lineHeight: 1.5,
-            textAlign: "right",
         },
 
         body1: {
             fontSize: "1.125rem",
             lineHeight: 1.4,
-            textAlign: "right",
         },
 
         body2: {
             fontSize: "1rem",
             lineHeight: 1.5,
-            textAlign: "right",
         },
 
         subtitle1: {
             fontSize: "0.875rem",
             lineHeight: 1.6,
-            textAlign: "right",
         },
 
         subtitle2: {
             fontSize: "0.625rem",
             lineHeight: 1.6,
-            textAlign: "right",
         },
     },
 
@@ -95,24 +93,6 @@ const ApplicationTheme = createTheme({
         [4, 8, 12, 16, 20, 24, 28, 40, 60, 100, 160, 240][factor] / 16 + "rem",
 
     components: {
-
-        MuiTextField: {
-            styleOverrides: {
-                root: {
-                    direction: "rtl",
-                }
-            }
-        },
-
-        MuiInputLabel: {
-            styleOverrides: {
-                root: {
-                    right: 0,
-                    transformOrigin: "top right",
-                    fontSize: "1rem",
-                }
-            }
-        },
 
         MuiInputBase: {
             styleOverrides: {
@@ -122,6 +102,22 @@ const ApplicationTheme = createTheme({
             },
         },
 
+        MuiInputLabel: {
+            styleOverrides: {
+                root: {
+                    fontSize: "0.875rem",
+                    lineHeight: 1.6,
+                },
+            },
+        },
+
+        MuiPaper: {
+            styleOverrides: {
+                root: {
+                    boxShadow: "0 5px 12px rgba(0, 0, 0, 0.2)",
+                },
+            },
+        },
     }
 });
 
